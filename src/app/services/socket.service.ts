@@ -10,7 +10,7 @@ export class SocketService {
   socket
 
   initConnection() {
-    this.socket = io('http://localhost:3000');
+    this.socket = io('https://ng-battleship-tp.herokuapp.com');
   }
 
   addPlayer(gameId) {
