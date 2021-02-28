@@ -10,7 +10,7 @@ const io = require('socket.io')(server, {
      }
 });
 
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
 
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
